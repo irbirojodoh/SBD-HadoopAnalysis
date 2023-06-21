@@ -276,11 +276,11 @@ The objective of this experiment is to compare the execution time of the word co
 
 ### Hardware Specifications
 
-|  Part   | Specifications |
-| :-----: | :------------: |
-|   CPU   |                |
-|   RAM   |                |
-| Storage |                |
+|  Part   |                          Specifications                          |
+| :-----: | :--------------------------------------------------------------: |
+|   CPU   | Intel Core i5-1135G7 dual-core (4 thread) 3GHz TurboBoost 4,1GHz |
+|   RAM   |                         8GB DDR4 3200MHz                         |
+| Storage |                    512GB PCIe 3.0 x4 M2 NVMe                     |
 
 ### Dataset Source
 
@@ -304,11 +304,12 @@ Here are the results of the conducted experiment:
 
 | Dataset | Word Count with Hadoop MapReduce | Word Count without Framework | Scalable |
 | :-----: | :------------------------------: | :--------------------------: | :------: |
-|   MB    |                s                 |              s               |          |
-|   MB    |                s                 |              s               |          |
-|   MB    |                s                 |              s               |          |
-|   GB    |                s                 |              s               |          |
-|   GB    |                s                 |              s               |          |
+|  1 MB   |              17 sec              |          0,546 sec           |  31,13   |
+|  10 MB  |              19 sec              |           1,39 sec           |  13,66   |
+| 100 MB  |            55,33 sec             |          129,67 sec          |   0,42   |
+| 200 MB  |            68,43 sec             |          203,85 sec          |   0,33   |
+| 500 MB  |            109,72 sec            |          307,83 sec          |   0,32   |
+| 1000 MB |            152,86 sec            |          521,08 sec          |   0,29   |
 
 ### Experiment Results Graph
 
