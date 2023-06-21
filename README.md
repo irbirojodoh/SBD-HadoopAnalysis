@@ -25,7 +25,7 @@ The framework comprises two main functions: the Map function and the Reduce func
 |  Abdul Fikih Kurnia   | 2106731200 |
 |  Bintang Marsyuma R   | 2106731415 |
 |     Ibrahim Rijal     | 2106633323 |
-| Stepan Agusto Hutapea | 2106700744 |
+| Stefan Agusto Hutapea | 2106700744 |
 
 ## **Hadoop Installation**
 
@@ -304,10 +304,10 @@ Here are the results of the conducted experiment:
 
 | Dataset | Word Count with Hadoop MapReduce | Word Count without Framework | Scalable |
 | :-----: | :------------------------------: | :--------------------------: | :------: |
-|   MB    |                s                 |              s               |          |
-|   MB    |                s                 |              s               |          |
-|   MB    |                s                 |              s               |          |
-|   GB    |                s                 |              s               |          |
+|  100 MB |                s                 |             129 s            |          |
+|  200 MB |                s                 |             203 s            |          |
+|  500 MB |                s                 |             307 s            |          |
+|  1 GB   |                s                 |             521 s            |          |
 |   GB    |                s                 |              s               |          |
 
 ### Experiment Results Graph
