@@ -334,12 +334,12 @@ The objective of this experiment is to compare the execution time of the word co
 
 The dataset used in this experiment was obtained from source website. It consists of a collection of text documents in various formats, such as plain text, PDF, and HTML. The dataset encompasses a wide range of topics and is representative of real-world data that requires processing and analysis.
 
-- 1 MB : [Resources](abdfikih.site)
-- 10 MB : [Resources](abdfikih.site)
-- 100 MB : [Resources](abdfikih.site)
-- 200 MB : [Resources](abdfikih.site)
-- 500 MB : [Resources](abdfikih.site)
-- 1000 MB : [Resources](abdfikih.site)
+- 1 MB : [Resources](https://drive.google.com/file/d/1K7Oln7oheItmJZ4sZO13KTeU90XmSN3E/view?usp=sharing)
+- 10 MB : [Resources](https://drive.google.com/file/d/1Meb-WsPJzBgT8fQLQlAsskwag5bEOSGv/view?usp=sharing)
+- 100 MB : [Resources](https://drive.google.com/file/d/12kQcD6sXR9Owf3Uk7Hr7vCdlqBR90vp-/view?usp=sharing)
+- 200 MB : [Resources](https://drive.google.com/file/d/1krZVPxzodDvRqtH1xb3gFBPjhLO3LLND/view?usp=sharing)
+- 500 MB : [Resources](https://drive.google.com/file/d/1hSr3CAFkSveR1--hIuKFE-FQ3pmswL1Z/view?usp=sharing)
+- 1000 MB : [Resources](https://drive.google.com/file/d/1Z_T6Lb2K2e3JFxrXsnECwOhGHUN0TfVG/view?usp=sharing)
 
 ### Word Count Source Code
 
