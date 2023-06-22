@@ -300,6 +300,16 @@ Following message will appear on the command prompt :
 
 ![example_run](asset/example_run.png)
 
+Now you can find the results of the wordcount on the output we created.
+
+Open up the output_dir folder inside the Hadoop interface on the following link:
+
+```
+http://localhost:9870/explorer.html#/output
+```
+
+and click the file named `part-r-00000`(1), and a small window will show up, click the `download`(2) option, and there you will be able to see the number of appearances for each word in the example file.
+
 ## **Experiment performs Hadoop MapReduce**
 
 The purpose of this experiment is to test the difference in execution time between the word count program (Java) using the Hadoop MapReduce framework and without the framework. This experiment aims to understand the extent to which Hadoop MapReduce can enhance the performance of distributed data processing.
@@ -323,6 +333,13 @@ The objective of this experiment is to compare the execution time of the word co
 ### Dataset Source
 
 The dataset used in this experiment was obtained from source website. It consists of a collection of text documents in various formats, such as plain text, PDF, and HTML. The dataset encompasses a wide range of topics and is representative of real-world data that requires processing and analysis.
+
+- 1 MB : [Resources](abdfikih.site)
+- 10 MB : [Resources](abdfikih.site)
+- 100 MB : [Resources](abdfikih.site)
+- 200 MB : [Resources](abdfikih.site)
+- 500 MB : [Resources](abdfikih.site)
+- 1000 MB : [Resources](abdfikih.site)
 
 ### Word Count Source Code
 
