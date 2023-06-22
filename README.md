@@ -372,4 +372,20 @@ Here is the graph representing the results of the conducted experiment:
 
 ## Analysis of Experiment Results
 
-Based on the experiment results and the graph, several key observations can be made:
+Based on the experiment results and the graph, A thorough analysis of the speed differences between Hadoop and the Java Word Count program can be explained as follows:
+
+Hadoop is a framework for processing data designed to handle large volumes of data in a distributed manner. It uses the MapReduce approach, where data is divided into blocks, which are then processed in parallel by multiple nodes in a cluster. On the other hand, the Java Word Count program is a Java program that counts the number of words in a text without using any framework.
+
+![example_run](asset/concept_hadoop.png)
+
+1. In general, Hadoop is slower in performing Word Count compared to the standalone Java Word Count program. This can be observed from the recorded execution times in the table. Several factors contribute to this difference:
+
+- a. Framework Overhead: Hadoop has additional overhead to manage during processing. This includes the process of dividing data into blocks, task scheduling, data transmission between nodes, and result synchronization. These overheads cause Hadoop to require additional time to initiate and coordinate processing tasks.
+
+- b. Data Partitioning and Parallel Processing: While data partitioning and parallel processing in Hadoop enhance its scalability, they also introduce additional overhead in terms of data transmission between nodes and result synchronization. In some cases, this overhead can impact the performance of Hadoop, especially when dealing with relatively small datasets.
+
+2. Scalability: Despite Hadoop's slower performance in certain cases, it demonstrates an advantage in terms of scalability. Scalability refers to a system's ability to increase processing capacity as the volume of data increases. In the table, the values recorded in the "Scalable" column depict the comparison of processing speed between Hadoop and the standalone Java Word Count program as the dataset size increases. Hadoop maintains a relatively constant execution time, while the standalone Java Word Count program experiences a significant increase.
+
+3. Dataset Size: The speed difference between Hadoop and the standalone Java Word Count program can also be influenced by the dataset size. For relatively small datasets, the standalone Java Word Count program performs better due to the overhead faced by Hadoop, which can become more significant in this context. However, as the dataset size increases, the advantages of parallel processing and Hadoop's scalability become more apparent.
+
+In conclusion, Hadoop offers advantages in terms of scalability and distributed data processing but introduces additional overhead that can result in slower performance in certain cases. The standalone Java Word Count program tends to have better speed for relatively small datasets. The choice between Hadoop and the standalone Java Word Count program depends on the specific requirements of the data processing task, the dataset size, and the desired scalability.
