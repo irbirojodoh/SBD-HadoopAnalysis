@@ -218,7 +218,7 @@ Edit `yarn-site.xml` and replace the `configuration` element with the following:
 When executing the command below, you may encounter the following error:
 
 ```
-$ hdfs namenode -format
+hdfs namenode -format
 ...
 ERROR namenode.NameNode: Failed to start namenode.
 ...
@@ -231,7 +231,7 @@ To resolve this issue, you will need to download a JAR file that contains the ne
 Execute the following command to initiate the HDFS daemons. Upon running this command, two new windows should appear: one for the datanode and another for the namenode.
 
 ```
-$ %HADOOP_HOME%\sbin\start-dfs.cmd
+%HADOOP_HOME%\sbin\start-dfs.cmd
 ```
 
 ## Step 8 - Start YARN daemons
@@ -239,7 +239,7 @@ $ %HADOOP_HOME%\sbin\start-dfs.cmd
 To initiate the YARN daemons, execute the following command (with elevated permissions). Upon running this command, two new windows should open: one for the resource manager and another for the node manager.
 
 ```
-$ %HADOOP_HOME%\sbin\start-yarn.cmd
+%HADOOP_HOME%\sbin\start-yarn.cmd
 ```
 
 ## Step 9 - Useful Web portals
@@ -260,7 +260,45 @@ The daemons also host websites that provide useful information about the cluster
 
 ## Step 10 - Shutdown YARN and HDFS daemons
 
+And for stop this process, you can input command following this :
+
+```
+%HADOOP_HOME%\sbin\stop-dfs.cmd
+%HADOOP_HOME%\sbin\stop-yarn.cmd
+```
+
 ## **Running Hadoop and Word Count**
+
+Open a command prompt as administrator and run the following command to create an input and output folder on the Hadoop file system, Like this :
+
+```
+hadoop fs -mkdir /input
+hadoop fs -mkdir /output
+```
+
+Now let’s move the file “exmaple.txt”, from D: to /input :
+
+```
+hadoop fs -put D:/download/example.txt /input
+```
+
+We can verify the file has moved successfully on the following link:
+
+```
+hadoop fs -ls /input
+```
+
+For the next step, we’ll need the `“hadoop-mapreduce-examples-3.2.1.jar”`, found in `“D:\hadoop-env\hadoop-3.2.1\share\hadoop\mapreduce”`.
+
+We’ll execute the following command in order to call the function wordcount inside the mapreduce Like this:
+
+```
+hadoop jar D:\hadoop-env\hadoop-3.2.1\share\hadoop\mapreduce\hadoop-mapreduce-examples-3.2.1.jar wordcount /input/example.txt /output
+```
+
+Following message will appear on the command prompt :
+
+![example_run]()
 
 ## **Experiment performs Hadoop MapReduce**
 
