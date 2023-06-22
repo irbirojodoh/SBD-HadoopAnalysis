@@ -298,7 +298,7 @@ hadoop jar D:\hadoop-env\hadoop-3.2.1\share\hadoop\mapreduce\hadoop-mapreduce-ex
 
 Following message will appear on the command prompt :
 
-![example_run]()
+![example_run](asset/example_run.png)
 
 ## **Experiment performs Hadoop MapReduce**
 
