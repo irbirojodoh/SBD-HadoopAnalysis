@@ -370,13 +370,15 @@ Here are the results of the conducted experiment:
 
 Here is the graph representing the results of the conducted experiment:
 
+![graph](asset/Graph.png)
+
 ## Analysis of Experiment Results
 
 Based on the experiment results and the graph, A thorough analysis of the speed differences between Hadoop and the Java Word Count program can be explained as follows:
 
 Hadoop is a framework for processing data designed to handle large volumes of data in a distributed manner. It uses the MapReduce approach, where data is divided into blocks, which are then processed in parallel by multiple nodes in a cluster. On the other hand, the Java Word Count program is a Java program that counts the number of words in a text without using any framework.
 
-![example_run](asset/concept_hadoop.png)
+![example_run](asset/concept_hadoop.PNG)
 
 1. In general, Hadoop is slower in performing Word Count compared to the standalone Java Word Count program. This can be observed from the recorded execution times in the table. Several factors contribute to this difference:
 
