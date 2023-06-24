@@ -276,7 +276,7 @@ hadoop fs -mkdir /input
 hadoop fs -mkdir /output
 ```
 
-Now let’s move the file “exmaple.txt”, from D: to /input :
+Now let’s move the file “example.txt”, from D: to /input :
 
 ```
 hadoop fs -put D:/download/example.txt /input
@@ -389,5 +389,7 @@ Hadoop is a framework for processing data designed to handle large volumes of da
 2. Scalability: Despite Hadoop's slower performance in certain cases, it demonstrates an advantage in terms of scalability. Scalability refers to a system's ability to increase processing capacity as the volume of data increases. In the table, the values recorded in the "Scalable" column depict the comparison of processing speed between Hadoop and the standalone Java Word Count program as the dataset size increases. Hadoop maintains a relatively constant execution time, while the standalone Java Word Count program experiences a significant increase.
 
 3. Dataset Size: The speed difference between Hadoop and the standalone Java Word Count program can also be influenced by the dataset size. For relatively small datasets, the standalone Java Word Count program performs better due to the overhead faced by Hadoop, which can become more significant in this context. However, as the dataset size increases, the advantages of parallel processing and Hadoop's scalability become more apparent.
+
+## **Conslusion**
 
 In conclusion, Hadoop offers advantages in terms of scalability and distributed data processing but introduces additional overhead that can result in slower performance in certain cases. The standalone Java Word Count program tends to have better speed for relatively small datasets. The choice between Hadoop and the standalone Java Word Count program depends on the specific requirements of the data processing task, the dataset size, and the desired scalability.
